@@ -1,0 +1,11 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "faction_camp_rebalance",
+    "name": "Faction Camp Cost Rebalance",
+    "authors": [ "Kendris", "Aurica", "PizzaPolice" ],
+    "description": "Cuts all faction camp construction costs to a quarter of their original values",
+    "category": "rebalance",
+    "dependencies": [ "dda" ]
+  }
+]

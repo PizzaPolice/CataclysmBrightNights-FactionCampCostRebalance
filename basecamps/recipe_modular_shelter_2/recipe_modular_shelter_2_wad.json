@@ -1,0 +1,314 @@
+[
+  {
+    "type": "recipe",
+    "result": "faction_base_modular_shelter_2_bedroom1_wad",
+    "description": "Let's build some living quarters so we can expand.  We will start in the northwest corner.",
+    "category": "CC_BUILDING",
+    "subcategory": "CSC_BUILDING_BASES",
+    "autolearn": false,
+    "never_learn": true,
+    "construction_blueprint": "fbmc_shelter_2_bedroom_NW_wad",
+    "blueprint_name": "build NW wattle and daub bedroom walls",
+    "blueprint_requires": [ { "id": "fbmc_shelter_2_fire" } ],
+    "blueprint_provides": [ { "id": "fbmc_shelter_2_bedroom1" } ],
+    "blueprint_excludes": [ { "id": "fbmc_shelter_2_bedroom1" } ],
+    "blueprint_needs": {
+      "time": "8 h 10 m",
+      "skills": [ [ "fabrication", 3 ], [ "survival", 3 ] ],
+      "inline": {
+        "tools": [  ],
+        "qualities": [ [ { "id": "CUT" } ], [ { "id": "HAMMER", "level": 2 } ] ],
+        "components": [
+          [ [ "2x4", 14 ] ],
+          [ [ "nail", 6 ] ],
+          [ [ "material_quicklime", 8 ], [ "material_limestone", 8 ], [ "clay_lump", 8 ] ],
+          [ [ "pebble", 5 ], [ "material_sand", 20 ] ],
+          [ [ "straw_pile", 8 ], [ "cattail_stalk", 8 ], [ "dogbane", 8 ], [ "pine_bough", 8 ] ],
+          [ [ "water", 10 ], [ "water_clean", 10 ] ],
+          [ [ "rope_makeshift_6", 1 ], [ "rope_6", 1 ] ]
+        ]
+      }
+    }
+  },
+  {
+    "type": "recipe",
+    "result": "faction_base_modular_shelter_2_bedroom2_wad",
+    "description": "Let's build some living quarters so we can expand.  We will continue along the west wall.",
+    "category": "CC_BUILDING",
+    "subcategory": "CSC_BUILDING_BASES",
+    "autolearn": false,
+    "never_learn": true,
+    "construction_blueprint": "fbmc_shelter_2_bedroom_W1_wad",
+    "blueprint_name": "build W wattle and daub bedroom walls",
+    "blueprint_requires": [ { "id": "fbmc_shelter_2_bedroom1" } ],
+    "blueprint_provides": [ { "id": "fbmc_shelter_2_bedroom2" } ],
+    "blueprint_excludes": [ { "id": "fbmc_shelter_2_bedroom2" } ],
+    "blueprint_needs": {
+      "time": "8 h 10 m",
+      "skills": [ [ "fabrication", 3 ], [ "survival", 3 ] ],
+      "inline": {
+        "tools": [  ],
+        "qualities": [ [ { "id": "CUT" } ], [ { "id": "HAMMER", "level": 2 } ] ],
+        "components": [
+          [ [ "2x4", 14 ] ],
+          [ [ "nail", 6 ] ],
+          [ [ "material_quicklime", 8 ], [ "material_limestone", 8 ], [ "clay_lump", 8 ] ],
+          [ [ "pebble", 20 ], [ "material_sand", 20 ] ],
+          [ [ "straw_pile", 8 ], [ "cattail_stalk", 8 ], [ "dogbane", 8 ], [ "pine_bough", 8 ] ],
+          [ [ "water", 10 ], [ "water_clean", 10 ] ],
+          [ [ "rope_makeshift_6", 1 ], [ "rope_6", 1 ] ]
+        ]
+      }
+    }
+  },
+  {
+    "type": "recipe",
+    "result": "faction_base_modular_shelter_2_bedroom3_wad",
+    "description": "Let's build some living quarters so we can expand.  We will continue along the same wall.",
+    "category": "CC_BUILDING",
+    "subcategory": "CSC_BUILDING_BASES",
+    "autolearn": false,
+    "never_learn": true,
+    "construction_blueprint": "fbmc_shelter_2_bedroom_W2_wad",
+    "blueprint_name": "build W wattle and daub bedroom walls",
+    "blueprint_requires": [ { "id": "fbmc_shelter_2_bedroom2" } ],
+    "blueprint_provides": [ { "id": "fbmc_shelter_2_bedroom3" } ],
+    "blueprint_excludes": [ { "id": "fbmc_shelter_2_bedroom3" } ],
+    "blueprint_needs": {
+      "time": "6 h 30 m",
+      "skills": [ [ "survival", 3 ], [ "fabrication", 3 ] ],
+      "inline": {
+        "tools": [  ],
+        "qualities": [ [ { "id": "CUT" } ], [ { "id": "HAMMER", "level": 2 } ] ],
+        "components": [
+          [ [ "2x4", 12 ] ],
+          [ [ "cattail_stalk", 6 ], [ "dogbane", 6 ], [ "pine_bough", 6 ], [ "straw_pile", 6 ] ],
+          [ [ "clay_lump", 6 ], [ "material_limestone", 6 ], [ "material_quicklime", 6 ] ],
+          [ [ "material_sand", 15 ], [ "pebble", 15 ] ],
+          [ [ "nail", 6 ] ],
+          [ [ "rope_6", 1 ], [ "rope_makeshift_6", 1 ] ],
+          [ [ "water", 8 ], [ "water_clean", 8 ] ]
+        ]
+      }
+    }
+  },
+  {
+    "type": "recipe",
+    "result": "faction_base_modular_shelter_2_bedroom4_wad",
+    "description": "Let's build some living quarters so we can expand.  We will enclose the west side of the stairs.",
+    "category": "CC_BUILDING",
+    "subcategory": "CSC_BUILDING_BASES",
+    "autolearn": false,
+    "never_learn": true,
+    "construction_blueprint": "fbmc_shelter_2_bedroom_W3_wad",
+    "blueprint_name": "build W wattle and daub bedroom walls",
+    "blueprint_requires": [ { "id": "fbmc_shelter_2_bedroom3" } ],
+    "blueprint_provides": [ { "id": "fbmc_shelter_2_bedroom4" } ],
+    "blueprint_excludes": [ { "id": "fbmc_shelter_2_bedroom4" } ],
+    "blueprint_needs": {
+      "time": "16 h 30 m",
+      "skills": [ [ "survival", 3 ], [ "fabrication", 3 ] ],
+      "inline": {
+        "tools": [  ],
+        "qualities": [ [ { "id": "CUT" } ], [ { "id": "HAMMER", "level": 2 } ] ],
+        "components": [
+          [ [ "2x4", 26 ] ],
+          [ [ "cattail_stalk", 20 ], [ "dogbane", 20 ], [ "pine_bough", 20 ], [ "straw_pile", 20 ] ],
+          [ [ "clay_lump", 20 ], [ "material_limestone", 20 ], [ "material_quicklime", 20 ] ],
+          [ [ "material_sand", 45 ], [ "pebble", 45 ] ],
+          [ [ "nail", 6 ] ],
+          [ [ "rope_6", 1 ], [ "rope_makeshift_6", 1 ] ],
+          [ [ "water", 30 ], [ "water_clean", 30 ] ]
+        ]
+      }
+    }
+  },
+  {
+    "type": "recipe",
+    "result": "faction_base_modular_shelter_2_bedroom5_wad",
+    "description": "Let's build some living quarters so we can expand.  We will continue along the southwest corner.",
+    "category": "CC_BUILDING",
+    "subcategory": "CSC_BUILDING_BASES",
+    "autolearn": false,
+    "never_learn": true,
+    "construction_blueprint": "fbmc_shelter_2_bedroom_SW_wad",
+    "blueprint_name": "build SW wattle and daub bedroom walls",
+    "blueprint_requires": [ { "id": "fbmc_shelter_2_bedroom4" } ],
+    "blueprint_provides": [ { "id": "fbmc_shelter_2_bedroom5" } ],
+    "blueprint_excludes": [ { "id": "fbmc_shelter_2_bedroom5" } ],
+    "blueprint_needs": {
+      "time": "9 h 50 m",
+      "skills": [ [ "survival", 3 ], [ "fabrication", 3 ] ],
+      "inline": {
+        "tools": [  ],
+        "qualities": [ [ { "id": "CUT" } ], [ { "id": "HAMMER", "level": 2 } ] ],
+        "components": [
+          [ [ "2x4", 18 ] ],
+          [ [ "cattail_stalk", 10 ], [ "dogbane", 10 ], [ "pine_bough", 10 ], [ "straw_pile", 10 ] ],
+          [ [ "clay_lump", 10 ], [ "material_limestone", 10 ], [ "material_quicklime", 10 ] ],
+          [ [ "material_sand", 25 ], [ "pebble", 25 ] ],
+          [ [ "nail", 6 ] ],
+          [ [ "rope_6", 1 ], [ "rope_makeshift_6", 1 ] ],
+          [ [ "water", 12 ], [ "water_clean", 12 ] ]
+        ]
+      }
+    }
+  },
+  {
+    "type": "recipe",
+    "result": "faction_base_modular_shelter_2_bedroom6_wad",
+    "description": "Let's build two living quarters so we can expand.  We will continue along the south wall.",
+    "category": "CC_BUILDING",
+    "subcategory": "CSC_BUILDING_BASES",
+    "autolearn": false,
+    "never_learn": true,
+    "construction_blueprint": "fbmc_shelter_2_bedroom_S_wad",
+    "blueprint_name": "build S wattle and daub bedroom walls",
+    "blueprint_requires": [ { "id": "fbmc_shelter_2_bedroom5" } ],
+    "blueprint_provides": [ { "id": "fbmc_shelter_2_bedroom6" } ],
+    "blueprint_excludes": [ { "id": "fbmc_shelter_2_bedroom6" } ],
+    "blueprint_needs": {
+      "time": "16 h 20 m",
+      "skills": [ [ "survival", 3 ], [ "fabrication", 3 ] ],
+      "inline": {
+        "tools": [  ],
+        "qualities": [ [ { "id": "CUT" } ], [ { "id": "HAMMER", "level": 2 } ] ],
+        "components": [
+          [ [ "2x4", 30 ] ],
+          [ [ "cattail_stalk", 18 ], [ "dogbane", 18 ], [ "pine_bough", 18 ], [ "straw_pile", 18 ] ],
+          [ [ "clay_lump", 18 ], [ "material_limestone", 18 ], [ "material_quicklime", 18 ] ],
+          [ [ "material_sand", 40 ], [ "pebble", 40 ] ],
+          [ [ "nail", 12 ] ],
+          [ [ "rope_6", 1 ], [ "rope_makeshift_6", 1 ] ],
+          [ [ "water", 20 ], [ "water_clean", 20 ] ]
+        ]
+      }
+    }
+  },
+  {
+    "type": "recipe",
+    "result": "faction_base_modular_shelter_2_bedroom7_wad",
+    "description": "Let's build another bedroom so we can expand.  We will continue to enclose the stairwell and add new doors.",
+    "category": "CC_BUILDING",
+    "subcategory": "CSC_BUILDING_BASES",
+    "autolearn": false,
+    "never_learn": true,
+    "construction_blueprint": "fbmc_shelter_2_bedroom_E1_wad",
+    "blueprint_name": "build central E bedroom wattle and daub",
+    "blueprint_requires": [ { "id": "fbmc_shelter_2_bedroom6" } ],
+    "blueprint_provides": [ { "id": "fbmc_shelter_2_bedroom7" } ],
+    "blueprint_excludes": [ { "id": "fbmc_shelter_2_bedroom7" } ],
+    "blueprint_needs": {
+      "time": "19 h 30 m",
+      "skills": [ [ "survival", 3 ], [ "fabrication", 3 ] ],
+      "inline": {
+        "tools": [  ],
+        "qualities": [ [ { "id": "CUT" } ], [ { "id": "HAMMER", "level": 2 } ], [ { "id": "SAW_W", "level": 2 } ] ],
+        "components": [
+          [ [ "2x4", 30 ] ],
+          [ [ "cattail_stalk", 17 ], [ "dogbane", 17 ], [ "pine_bough", 17 ], [ "straw_pile", 17 ] ],
+          [ [ "clay_lump", 17 ], [ "material_limestone", 17 ], [ "material_quicklime", 17 ] ],
+          [ [ "hinge", 1 ] ],
+          [ [ "material_sand", 45 ], [ "pebble", 45 ] ],
+          [ [ "nail", 25 ] ],
+          [ [ "rope_6", 1 ], [ "rope_makeshift_6", 1 ] ],
+          [ [ "water", 28 ], [ "water_clean", 28 ] ],
+          [ [ "wood_panel", 2 ] ]
+        ]
+      }
+    }
+  },
+  {
+    "type": "recipe",
+    "result": "faction_base_modular_shelter_2_bedroom8_wad",
+    "description": "Let's build another bedroom on the east wall.",
+    "category": "CC_BUILDING",
+    "subcategory": "CSC_BUILDING_BASES",
+    "autolearn": false,
+    "never_learn": true,
+    "construction_blueprint": "fbmc_shelter_2_bedroom_E2_wad",
+    "blueprint_name": "build E bedroom wattle and daub",
+    "blueprint_requires": [ { "id": "fbmc_shelter_2_bedroom7" } ],
+    "blueprint_provides": [ { "id": "fbmc_shelter_2_bedroom8" } ],
+    "blueprint_excludes": [ { "id": "fbmc_shelter_2_bedroom8" } ],
+    "blueprint_needs": {
+      "time": "9 h 50 m",
+      "skills": [ [ "survival", 3 ], [ "fabrication", 3 ] ],
+      "inline": {
+        "tools": [  ],
+        "qualities": [ [ { "id": "CUT" } ], [ { "id": "HAMMER", "level": 2 } ] ],
+        "components": [
+          [ [ "2x4", 15 ] ],
+          [ [ "cattail_stalk", 10 ], [ "dogbane", 10 ], [ "pine_bough", 10 ], [ "straw_pile", 10 ] ],
+          [ [ "clay_lump", 10 ], [ "material_limestone", 10 ], [ "material_quicklime", 10 ] ],
+          [ [ "material_sand", 25 ], [ "pebble", 25 ] ],
+          [ [ "nail", 6 ] ],
+          [ [ "rope_6", 1 ], [ "rope_makeshift_6", 1 ] ],
+          [ [ "water", 12 ], [ "water_clean", 12 ] ]
+        ]
+      }
+    }
+  },
+  {
+    "type": "recipe",
+    "result": "faction_base_modular_shelter_2_bedroom9_wad",
+    "description": "Let's build another bedroom on the east wall.",
+    "category": "CC_BUILDING",
+    "subcategory": "CSC_BUILDING_BASES",
+    "autolearn": false,
+    "never_learn": true,
+    "construction_blueprint": "fbmc_shelter_2_bedroom_E3_wad",
+    "blueprint_name": "build E bedroom wattle and daub",
+    "blueprint_requires": [ { "id": "fbmc_shelter_2_bedroom8" } ],
+    "blueprint_provides": [ { "id": "fbmc_shelter_2_bedroom9" } ],
+    "blueprint_excludes": [ { "id": "fbmc_shelter_2_bedroom9" } ],
+    "blueprint_needs": {
+      "time": "8 h 10 m",
+      "skills": [ [ "survival", 3 ], [ "fabrication", 3 ] ],
+      "inline": {
+        "tools": [  ],
+        "qualities": [ [ { "id": "CUT" } ], [ { "id": "HAMMER", "level": 2 } ] ],
+        "components": [
+          [ [ "2x4", 13 ] ],
+          [ [ "cattail_stalk", 8 ], [ "dogbane", 8 ], [ "pine_bough", 8 ], [ "straw_pile", 8 ] ],
+          [ [ "clay_lump", 8 ], [ "material_limestone", 8 ], [ "material_quicklime", 8 ] ],
+          [ [ "material_sand", 20 ], [ "pebble", 20 ] ],
+          [ [ "nail", 6 ] ],
+          [ [ "rope_6", 1 ], [ "rope_makeshift_6", 1 ] ],
+          [ [ "water", 10 ], [ "water_clean", 10 ] ]
+        ]
+      }
+    }
+  },
+  {
+    "type": "recipe",
+    "result": "faction_base_modular_shelter_2_bedroom10_wad",
+    "description": "Let's build another bedroom on the east wall.",
+    "category": "CC_BUILDING",
+    "subcategory": "CSC_BUILDING_BASES",
+    "autolearn": false,
+    "never_learn": true,
+    "construction_blueprint": "fbmc_shelter_2_bedroom_E4_wad",
+    "blueprint_name": "build E bedroom wattle and daub",
+    "blueprint_requires": [ { "id": "fbmc_shelter_2_bedroom9" } ],
+    "blueprint_provides": [ { "id": "fbmc_shelter_2_bedroom10" } ],
+    "blueprint_excludes": [ { "id": "fbmc_shelter_2_bedroom10" } ],
+    "blueprint_needs": {
+      "time": "6 h 30 m",
+      "skills": [ [ "survival", 3 ], [ "fabrication", 3 ] ],
+      "inline": {
+        "tools": [  ],
+        "qualities": [ [ { "id": "CUT" } ], [ { "id": "HAMMER", "level": 2 } ] ],
+        "components": [
+          [ [ "2x4", 12 ] ],
+          [ [ "cattail_stalk", 6 ], [ "dogbane", 6 ], [ "pine_bough", 6 ], [ "straw_pile", 6 ] ],
+          [ [ "clay_lump", 6 ], [ "material_limestone", 6 ], [ "material_quicklime", 6 ] ],
+          [ [ "material_sand", 15 ], [ "pebble", 15 ] ],
+          [ [ "nail", 6 ] ],
+          [ [ "rope_6", 1 ], [ "rope_makeshift_6", 1 ] ],
+          [ [ "water", 8 ], [ "water_clean", 8 ] ]
+        ]
+      }
+    }
+  }
+]

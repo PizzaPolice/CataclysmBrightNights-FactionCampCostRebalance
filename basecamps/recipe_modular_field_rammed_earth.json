@@ -1,0 +1,728 @@
+[
+  {
+    "type": "recipe",
+    "result": "faction_base_modular_hub_room0_rammed_earth_northeast",
+    "description": "We need some shelter, so build half of a rammed earth shack with a sod roof on the northeast side of the camp",
+    "category": "CC_BUILDING",
+    "subcategory": "CSC_BUILDING_BASES",
+    "autolearn": false,
+    "never_learn": true,
+    "construction_blueprint": "fbmh_room0_rammed_earth_northeast",
+    "blueprint_name": "northeast shack",
+    "blueprint_requires": [ { "id": "fbmh_0" } ],
+    "blueprint_provides": [ { "id": "fbmh_northeast" } ],
+    "blueprint_excludes": [ { "id": "fbmh_northeast" } ],
+    "blueprint_needs": {
+      "time": "1 d 9 h",
+      "skills": [ [ "fabrication", 4 ] ],
+      "inline": {
+        "tools": [ [ [ "frame_wood_light", -1 ] ], [ [ "log", -1 ] ] ],
+        "qualities": [ [ { "id": "DIG", "level": 2 } ], [ { "id": "HAMMER", "level": 2 } ] ],
+        "components": [
+          [ [ "pointy_stick", 2 ], [ "spear_wood", 2 ] ],
+          [ [ "material_soil", 200 ] ],
+          [ [ "water", 100 ], [ "water_clean", 100 ] ],
+          [ [ "material_sand", 20 ], [ "material_quicklime", 20 ], [ "concrete", 1 ] ],
+          [ [ "log", 2 ] ],
+          [ [ "stick", 4 ], [ "2x4", 4 ] ],
+          [ [ "birchbark", 12 ], [ "pine_bough", 12 ] ]
+        ]
+      }
+    }
+  },
+  {
+    "type": "recipe",
+    "result": "faction_base_modular_hub_room1_rammed_earth_northeast",
+    "description": "We should use rammed earth to expand the shelter so we have space for another bed.",
+    "category": "CC_BUILDING",
+    "subcategory": "CSC_BUILDING_BASES",
+    "autolearn": false,
+    "never_learn": true,
+    "construction_blueprint": "fbmh_room1_rammed_earth_northeast",
+    "blueprint_name": "expand northeast shack",
+    "blueprint_requires": [ { "id": "fbmh_northeast" } ],
+    "blueprint_provides": [ { "id": "fbmh_northeast" } ],
+    "blueprint_excludes": [ { "id": "fbmh_northeast", "amount": 2 }, { "id": "fbmh_tent_northeast" } ],
+    "blueprint_needs": {
+      "time": "1 d 6 h",
+      "skills": [ [ "fabrication", 4 ] ],
+      "inline": {
+        "tools": [ [ [ "frame_wood_light", -1 ] ], [ [ "log", -1 ] ] ],
+        "qualities": [ [ { "id": "DIG", "level": 2 } ], [ { "id": "HAMMER", "level": 2 } ] ],
+        "components": [
+          [ [ "log", 3 ] ],
+          [ [ "2x4", 5 ], [ "stick", 5 ] ],
+          [ [ "birchbark", 15 ], [ "pine_bough", 15 ] ],
+          [ [ "concrete", 3 ], [ "material_quicklime", 15 ], [ "material_sand", 15 ] ],
+          [ [ "material_soil", 320 ] ],
+          [ [ "nail", 8 ] ],
+          [ [ "pointy_stick", 2 ], [ "spear_wood", 2 ] ],
+          [ [ "water", 80 ], [ "water_clean", 80 ] ]
+        ]
+      }
+    }
+  },
+  {
+    "type": "recipe",
+    "result": "faction_base_modular_hub_room2_rammed_earth_northeast",
+    "description": "We should use rammed earth to finish the northeast shack.",
+    "category": "CC_BUILDING",
+    "subcategory": "CSC_BUILDING_BASES",
+    "skill_used": "fabrication",
+    "autolearn": false,
+    "never_learn": true,
+    "construction_blueprint": "fbmh_room2_rammed_earth_northeast",
+    "blueprint_name": "finish northeast shack",
+    "blueprint_requires": [ { "id": "fbmh_northeast", "amount": 2 } ],
+    "blueprint_provides": [ { "id": "fbmh_northeast", "amount": 2 } ],
+    "blueprint_excludes": [ { "id": "fbmh_northeast", "amount": 4 }, { "id": "fbmh_tent_northeast" } ],
+    "blueprint_needs": {
+      "time": "1 d 21 h 15 m",
+      "skills": [ [ "fabrication", 2 ] ],
+      "inline": {
+        "tools": [ [ [ "frame_wood_light", -1 ] ], [ [ "log", -1 ] ] ],
+        "qualities": [ [ { "id": "CUT" } ], [ { "id": "DIG", "level": 2 } ], [ { "id": "HAMMER", "level": 2 } ] ],
+        "components": [
+          [ [ "2x4", 4 ] ],
+          [ [ "nail", 6 ] ],
+          [ [ "pointy_stick", 4 ], [ "spear_wood", 4 ] ],
+          [ [ "material_soil", 400 ] ],
+          [ [ "water", 200 ], [ "water_clean", 200 ] ],
+          [ [ "material_sand", 30 ], [ "material_quicklime", 30 ], [ "concrete", 2 ] ],
+          [ [ "rope_makeshift_6", 1 ], [ "rope_6", 1 ] ]
+        ]
+      }
+    }
+  },
+  {
+    "type": "recipe",
+    "result": "faction_base_modular_hub_shack4_rammed_earth_east",
+    "description": "We should expand our housing by putting up a rammed earth building on the east side, which we can also use as part of the central building.",
+    "category": "CC_BUILDING",
+    "subcategory": "CSC_BUILDING_BASES",
+    "autolearn": false,
+    "never_learn": true,
+    "construction_blueprint": "fbmh_shack4_rammed_earth_east",
+    "blueprint_name": "east shack",
+    "blueprint_requires": [ { "id": "fbmh_tent_northeast" }, { "id": "fbmh_fire_northeast" }, { "id": "fbmh_bed2_northeast" } ],
+    "blueprint_provides": [ { "id": "fbmh_east", "amount": 4 } ],
+    "blueprint_excludes": [ { "id": "fbmh_east" } ],
+    "blueprint_needs": {
+      "time": "5 d 22 h 30 m",
+      "skills": [ [ "fabrication", 4 ] ],
+      "inline": {
+        "tools": [ [ [ "frame_wood_light", -1 ] ], [ [ "log", -1 ] ] ],
+        "qualities": [ [ { "id": "CUT" } ], [ { "id": "DIG", "level": 2 } ], [ { "id": "HAMMER", "level": 2 } ] ],
+        "components": [
+          [ [ "2x4", 30 ] ],
+          [ [ "nail", 20 ] ],
+          [ [ "pointy_stick", 9 ], [ "spear_wood", 9 ] ],
+          [ [ "material_soil", 1000 ] ],
+          [ [ "water", 400 ], [ "water_clean", 400 ] ],
+          [ [ "material_sand", 80 ], [ "material_quicklime", 80 ], [ "concrete", 4 ] ],
+          [ [ "rope_makeshift_6", 1 ], [ "rope_6", 1 ] ],
+          [ [ "log", 8 ] ],
+          [ [ "birchbark", 40 ], [ "pine_bough", 40 ] ]
+        ]
+      }
+    }
+  },
+  {
+    "type": "recipe",
+    "result": "faction_base_modular_hub_room4_rammed_earth_east",
+    "description": "We should expand our housing by adding a rammed earth room on the east side, which we can also use as part of the central building.",
+    "category": "CC_BUILDING",
+    "subcategory": "CSC_BUILDING_BASES",
+    "skill_used": "fabrication",
+    "autolearn": false,
+    "never_learn": true,
+    "construction_blueprint": "fbmh_room4_rammed_earth_east",
+    "blueprint_name": "east room",
+    "blueprint_requires": [ { "id": "fbmh_northeast", "amount": 4 }, { "id": "fbmh_fire_northeast" }, { "id": "fbmh_bed2_northeast" } ],
+    "blueprint_provides": [ { "id": "fbmh_east", "amount": 4 } ],
+    "blueprint_excludes": [ { "id": "fbmh_east" }, { "id": "fbmh_tent_northeast" } ],
+    "blueprint_needs": {
+      "time": "5 d 11 h 45 m",
+      "skills": [ [ "fabrication", 4 ] ],
+      "inline": {
+        "tools": [ [ [ "frame_wood_light", -1 ] ], [ [ "log", -1 ] ] ],
+        "qualities": [ [ { "id": "CUT" } ], [ { "id": "DIG", "level": 2 } ], [ { "id": "HAMMER", "level": 2 } ] ],
+        "components": [
+          [ [ "2x4", 40 ] ],
+          [ [ "nail", 20 ] ],
+          [ [ "pointy_stick", 7 ], [ "spear_wood", 7 ] ],
+          [ [ "material_soil", 1000 ] ],
+          [ [ "water", 400 ], [ "water_clean", 400 ] ],
+          [ [ "material_sand", 60 ], [ "material_quicklime", 60 ], [ "concrete", 3 ] ],
+          [ [ "rope_makeshift_6", 1 ], [ "rope_6", 1 ] ],
+          [ [ "log", 10 ] ],
+          [ [ "birchbark", 60 ], [ "pine_bough", 60 ] ]
+        ]
+      }
+    }
+  },
+  {
+    "type": "recipe",
+    "result": "faction_base_modular_hub_shack4_rammed_earth_southeast",
+    "description": "We should expand our housing by putting up a rammed earth building on the southeast side, which we can also use as part of the central building.",
+    "category": "CC_BUILDING",
+    "subcategory": "CSC_BUILDING_BASES",
+    "autolearn": false,
+    "never_learn": true,
+    "construction_blueprint": "fbmh_shack4_rammed_earth_southeast",
+    "blueprint_name": "southeast shack",
+    "blueprint_requires": [ { "id": "fbmh_tent_east" } ],
+    "blueprint_provides": [ { "id": "fbmh_southeast", "amount": 4 } ],
+    "blueprint_excludes": [ { "id": "fbmh_southeast" } ],
+    "blueprint_needs": {
+      "time": "5 d 22 h 30 m",
+      "skills": [ [ "fabrication", 4 ] ],
+      "inline": {
+        "tools": [ [ [ "frame_wood_light", -1 ] ], [ [ "log", -1 ] ] ],
+        "qualities": [ [ { "id": "CUT" } ], [ { "id": "DIG", "level": 2 } ], [ { "id": "HAMMER", "level": 2 } ] ],
+        "components": [
+          [ [ "2x4", 40 ] ],
+          [ [ "nail", 20 ] ],
+          [ [ "pointy_stick", 9 ], [ "spear_wood", 9 ] ],
+          [ [ "material_soil", 1000 ] ],
+          [ [ "water", 400 ], [ "water_clean", 400 ] ],
+          [ [ "material_sand", 80 ], [ "material_quicklime", 80 ], [ "concrete", 4 ] ],
+          [ [ "rope_makeshift_6", 1 ], [ "rope_6", 1 ] ],
+          [ [ "log", 8 ] ],
+          [ [ "birchbark", 60 ], [ "pine_bough", 60 ] ]
+        ]
+      }
+    }
+  },
+  {
+    "type": "recipe",
+    "result": "faction_base_modular_hub_room4_rammed_earth_southeast",
+    "description": "We should expand our housing by adding a rammed earth room on the southeast side, which we can also use as part of the central building.",
+    "category": "CC_BUILDING",
+    "subcategory": "CSC_BUILDING_BASES",
+    "skills_required": [ [ "survival", 3 ], [ "tailor", 1 ] ],
+    "autolearn": false,
+    "never_learn": true,
+    "construction_blueprint": "fbmh_room4_rammed_earth_southeast",
+    "blueprint_name": "southeast room",
+    "blueprint_requires": [ { "id": "fbmh_east", "amount": 4 } ],
+    "blueprint_provides": [ { "id": "fbmh_southeast", "amount": 4 } ],
+    "blueprint_excludes": [ { "id": "fbmh_southeast" }, { "id": "fbmh_tent_east" } ],
+    "blueprint_needs": {
+      "time": "5 d 5 h 30 m",
+      "skills": [ [ "fabrication", 4 ] ],
+      "inline": {
+        "tools": [ [ [ "frame_wood_light", -1 ] ], [ [ "log", -1 ] ] ],
+        "qualities": [ [ { "id": "CUT" } ], [ { "id": "DIG", "level": 2 } ], [ { "id": "HAMMER", "level": 2 } ] ],
+        "components": [
+          [ [ "2x4", 40 ] ],
+          [ [ "nail", 20 ] ],
+          [ [ "pointy_stick", 7 ], [ "spear_wood", 7 ] ],
+          [ [ "material_soil", 1000 ] ],
+          [ [ "water", 400 ], [ "water_clean", 400 ] ],
+          [ [ "material_sand", 40 ], [ "material_quicklime", 40 ], [ "concrete", 4 ] ],
+          [ [ "rope_makeshift_6", 1 ], [ "rope_6", 1 ] ],
+          [ [ "log", 10 ] ],
+          [ [ "birchbark", 60 ], [ "pine_bough", 60 ] ]
+        ]
+      }
+    }
+  },
+  {
+    "type": "recipe",
+    "result": "faction_base_modular_hub_room4_rammed_earth_northwest",
+    "description": "We should expand our housing by putting up a rammed earth building on the northwest side, which we can also use as part of the central building.",
+    "category": "CC_BUILDING",
+    "subcategory": "CSC_BUILDING_BASES",
+    "autolearn": false,
+    "never_learn": true,
+    "construction_blueprint": "fbmh_room4_rammed_earth_northwest",
+    "blueprint_name": "northwest shack",
+    "blueprint_requires": [ { "id": "fbmh_northeast", "amount": 4 }, { "id": "fbmh_fire_northeast" }, { "id": "fbmh_bed2_northeast" } ],
+    "blueprint_provides": [ { "id": "fbmh_northwest", "amount": 4 } ],
+    "blueprint_excludes": [ { "id": "fbmh_northwest" } ],
+    "blueprint_needs": {
+      "time": "4 d 12 h 15 m",
+      "skills": [ [ "fabrication", 4 ] ],
+      "inline": {
+        "tools": [ [ [ "frame_wood_light", -1 ] ], [ [ "log", -1 ] ] ],
+        "qualities": [ [ { "id": "CUT" } ], [ { "id": "DIG", "level": 2 } ], [ { "id": "HAMMER", "level": 2 } ] ],
+        "components": [
+          [ [ "2x4", 17 ] ],
+          [ [ "nail", 10 ] ],
+          [ [ "pointy_stick", 7 ], [ "spear_wood", 7 ] ],
+          [ [ "material_soil", 1000 ] ],
+          [ [ "water", 400 ], [ "water_clean", 400 ] ],
+          [ [ "material_sand", 60 ], [ "material_quicklime", 60 ], [ "concrete", 4 ] ],
+          [ [ "rope_makeshift_6", 1 ], [ "rope_6", 1 ] ],
+          [ [ "log", 4 ] ],
+          [ [ "birchbark", 25 ], [ "pine_bough", 25 ] ]
+        ]
+      }
+    }
+  },
+  {
+    "type": "recipe",
+    "result": "faction_base_modular_hub_shack4_rammed_earth_west",
+    "description": "We should expand our housing by putting up a rammed earth building on the west side, which we can also use as part of the central building.",
+    "category": "CC_BUILDING",
+    "subcategory": "CSC_BUILDING_BASES",
+    "autolearn": false,
+    "never_learn": true,
+    "construction_blueprint": "fbmh_shack4_rammed_earth_west",
+    "blueprint_name": "west shack",
+    "blueprint_requires": [ { "id": "fbmh_tent_northwest" } ],
+    "blueprint_provides": [ { "id": "fbmh_west", "amount": 4 } ],
+    "blueprint_excludes": [ { "id": "fbmh_west" } ],
+    "blueprint_needs": {
+      "time": "5 d 22 h 30 m",
+      "skills": [ [ "fabrication", 4 ] ],
+      "inline": {
+        "tools": [ [ [ "frame_wood_light", -1 ] ], [ [ "log", -1 ] ] ],
+        "qualities": [ [ { "id": "CUT" } ], [ { "id": "DIG", "level": 2 } ], [ { "id": "HAMMER", "level": 2 } ] ],
+        "components": [
+          [ [ "2x4", 25 ] ],
+          [ [ "nail", 20 ] ],
+          [ [ "pointy_stick", 9 ], [ "spear_wood", 9 ] ],
+          [ [ "material_soil", 1000 ] ],
+          [ [ "water", 400 ], [ "water_clean", 400 ] ],
+          [ [ "material_sand", 80 ], [ "material_quicklime", 80 ], [ "concrete", 4 ] ],
+          [ [ "rope_makeshift_6", 1 ], [ "rope_6", 1 ] ],
+          [ [ "log", 8 ] ],
+          [ [ "birchbark", 40 ], [ "pine_bough", 40 ] ]
+        ]
+      }
+    }
+  },
+  {
+    "type": "recipe",
+    "result": "faction_base_modular_hub_room4_rammed_earth_west",
+    "description": "We should expand our housing by adding a rammed earth room on the west side, which we can also use as part of the central building.",
+    "category": "CC_BUILDING",
+    "subcategory": "CSC_BUILDING_BASES",
+    "autolearn": false,
+    "never_learn": true,
+    "construction_blueprint": "fbmh_room4_rammed_earth_west",
+    "blueprint_name": "west room",
+    "blueprint_requires": [ { "id": "fbmh_northwest", "amount": 4 } ],
+    "blueprint_provides": [ { "id": "fbmh_west", "amount": 4 } ],
+    "blueprint_excludes": [ { "id": "fbmh_west" }, { "id": "fbmh_tent_northwest" } ],
+    "blueprint_needs": {
+      "time": "5 d 11 h 45 m",
+      "skills": [ [ "fabrication", 4 ] ],
+      "inline": {
+        "tools": [ [ [ "frame_wood_light", -1 ] ], [ [ "log", -1 ] ] ],
+        "qualities": [ [ { "id": "CUT" } ], [ { "id": "DIG", "level": 2 } ], [ { "id": "HAMMER", "level": 2 } ] ],
+        "components": [
+          [ [ "2x4", 35 ] ],
+          [ [ "nail", 20 ] ],
+          [ [ "pointy_stick", 7 ], [ "spear_wood", 7 ] ],
+          [ [ "material_soil", 1000 ] ],
+          [ [ "water", 400 ], [ "water_clean", 400 ] ],
+          [ [ "material_sand", 60 ], [ "material_quicklime", 60 ], [ "concrete", 4 ] ],
+          [ [ "rope_makeshift_6", 1 ], [ "rope_6", 1 ] ],
+          [ [ "log", 10 ] ],
+          [ [ "birchbark", 40 ], [ "pine_bough", 40 ] ]
+        ]
+      }
+    }
+  },
+  {
+    "type": "recipe",
+    "result": "faction_base_modular_hub_shack4_rammed_earth_southwest",
+    "description": "We should expand our housing by putting up a rammed earth building on the southwest side, which we can also use as part of the central building.",
+    "category": "CC_BUILDING",
+    "subcategory": "CSC_BUILDING_BASES",
+    "autolearn": false,
+    "never_learn": true,
+    "construction_blueprint": "fbmh_shack4_rammed_earth_southwest",
+    "blueprint_name": "southwest shack",
+    "blueprint_requires": [ { "id": "fbmh_tent_west" } ],
+    "blueprint_provides": [ { "id": "fbmh_southwest", "amount": 4 } ],
+    "blueprint_excludes": [ { "id": "fbmh_southwest" } ],
+    "blueprint_needs": {
+      "time": "5 d 22 h 30 m",
+      "skills": [ [ "fabrication", 4 ] ],
+      "inline": {
+        "tools": [ [ [ "frame_wood_light", -1 ] ], [ [ "log", -1 ] ] ],
+        "qualities": [ [ { "id": "CUT" } ], [ { "id": "DIG", "level": 2 } ], [ { "id": "HAMMER", "level": 2 } ] ],
+        "components": [
+          [ [ "2x4", 40 ] ],
+          [ [ "nail", 20 ] ],
+          [ [ "pointy_stick", 8 ], [ "spear_wood", 8 ] ],
+          [ [ "material_soil", 1000 ] ],
+          [ [ "water", 400 ], [ "water_clean", 400 ] ],
+          [ [ "material_sand", 80 ], [ "material_quicklime", 80 ], [ "concrete", 4 ] ],
+          [ [ "rope_makeshift_6", 1 ], [ "rope_6", 1 ] ],
+          [ [ "log", 8 ] ],
+          [ [ "birchbark", 40 ], [ "pine_bough", 40 ] ]
+        ]
+      }
+    }
+  },
+  {
+    "type": "recipe",
+    "result": "faction_base_modular_hub_room4_rammed_earth_southwest",
+    "description": "We should expand our housing by adding a rammed earth room on the southwest side, which we can also use as part of the central building.",
+    "category": "CC_BUILDING",
+    "subcategory": "CSC_BUILDING_BASES",
+    "autolearn": false,
+    "never_learn": true,
+    "construction_blueprint": "fbmh_room4_rammed_earth_southwest",
+    "blueprint_name": "southwest room",
+    "blueprint_requires": [ { "id": "fbmh_west", "amount": 4 } ],
+    "blueprint_provides": [ { "id": "fbmh_southwest", "amount": 4 } ],
+    "blueprint_excludes": [ { "id": "fbmh_southwest" }, { "id": "fbmh_tent_west" } ],
+    "blueprint_needs": {
+      "time": "5 d 5 h 30 m",
+      "skills": [ [ "fabrication", 4 ] ],
+      "inline": {
+        "tools": [ [ [ "frame_wood_light", -1 ] ], [ [ "log", -1 ] ] ],
+        "qualities": [ [ { "id": "CUT" } ], [ { "id": "DIG", "level": 2 } ], [ { "id": "HAMMER", "level": 2 } ] ],
+        "components": [
+          [ [ "2x4", 30 ] ],
+          [ [ "nail", 20 ] ],
+          [ [ "pointy_stick", 7 ], [ "spear_wood", 7 ] ],
+          [ [ "material_soil", 4000 ] ],
+          [ [ "water", 400 ], [ "water_clean", 400 ] ],
+          [ [ "material_sand", 40 ], [ "material_quicklime", 40 ], [ "concrete", 4 ] ],
+          [ [ "rope_makeshift_6", 1 ], [ "rope_6", 1 ] ],
+          [ [ "log", 10 ] ],
+          [ [ "birchbark", 60 ], [ "pine_bough", 60 ] ]
+        ]
+      }
+    }
+  },
+  {
+    "type": "recipe",
+    "result": "faction_base_modular_hub_core_shack_ne_rammed_earth_center",
+    "description": "A central building can act as a kitchen and dining hall.  We should build the northeast quarter of one from rammed earth.",
+    "category": "CC_BUILDING",
+    "subcategory": "CSC_BUILDING_BASES",
+    "autolearn": false,
+    "never_learn": true,
+    "construction_blueprint": "fbmh_core_shack_ne_rammed_earth_center",
+    "blueprint_name": "central building NE corner",
+    "blueprint_requires": [ { "id": "fbmh_tent_east" } ],
+    "blueprint_provides": [ { "id": "fbmh_center", "amount": 2 }, { "id": "fbmh_ne_center" } ],
+    "blueprint_excludes": [ { "id": "fbmh_ne_center" } ],
+    "blueprint_needs": {
+      "time": "2 d 17 h 15 m",
+      "skills": [ [ "fabrication", 4 ] ],
+      "inline": {
+        "tools": [ [ [ "frame_wood_light", -1 ] ], [ [ "log", -1 ] ] ],
+        "qualities": [ [ { "id": "CUT" } ], [ { "id": "DIG", "level": 2 } ], [ { "id": "HAMMER", "level": 2 } ] ],
+        "components": [
+          [ [ "2x4", 15 ] ],
+          [ [ "nail", 8 ] ],
+          [ [ "pointy_stick", 4 ], [ "spear_wood", 4 ] ],
+          [ [ "material_soil", 500 ] ],
+          [ [ "water", 180 ], [ "water_clean", 180 ] ],
+          [ [ "material_sand", 30 ], [ "material_quicklime", 30 ], [ "concrete", 2 ] ],
+          [ [ "rope_makeshift_6", 1 ], [ "rope_6", 1 ] ],
+          [ [ "log", 5 ] ],
+          [ [ "birchbark", 30 ], [ "pine_bough", 30 ] ]
+        ]
+      }
+    }
+  },
+  {
+    "type": "recipe",
+    "result": "faction_base_modular_hub_core_ne_rammed_earth_center",
+    "description": "A central building can act as a core and dining hall.  We should build out from the east room with rammed earth.",
+    "category": "CC_BUILDING",
+    "subcategory": "CSC_BUILDING_BASES",
+    "autolearn": false,
+    "never_learn": true,
+    "construction_blueprint": "fbmh_core_ne_rammed_earth_center",
+    "blueprint_name": "central building NE corner",
+    "blueprint_requires": [ { "id": "fbmh_east", "amount": 4 } ],
+    "blueprint_provides": [ { "id": "fbmh_center", "amount": 2 }, { "id": "fbmh_ne_center" } ],
+    "blueprint_excludes": [ { "id": "fbmh_ne_center" }, { "id": "fbmh_tent_east" } ],
+    "blueprint_needs": {
+      "time": "2 d 45 m",
+      "skills": [ [ "fabrication", 4 ] ],
+      "inline": {
+        "tools": [ [ [ "frame_wood_light", -1 ] ], [ [ "log", -1 ] ] ],
+        "qualities": [ [ { "id": "DIG", "level": 2 } ], [ { "id": "HAMMER", "level": 2 } ] ],
+        "components": [
+          [ [ "pointy_stick", 2 ], [ "spear_wood", 2 ] ],
+          [ [ "material_soil", 400 ] ],
+          [ [ "water", 50 ], [ "water_clean", 50 ] ],
+          [ [ "material_sand", 15 ], [ "material_quicklime", 15 ], [ "concrete", 3 ] ],
+          [ [ "log", 9 ] ],
+          [ [ "stick", 15 ], [ "2x4", 15 ] ],
+          [ [ "birchbark", 45 ], [ "pine_bough", 45 ] ]
+        ]
+      }
+    }
+  },
+  {
+    "type": "recipe",
+    "result": "faction_base_modular_hub_core_shack_nw_rammed_earth_center",
+    "description": "A central building can act as a core and dining hall.  We should build the northwest quarter of one from rammed earth.",
+    "category": "CC_BUILDING",
+    "subcategory": "CSC_BUILDING_BASES",
+    "autolearn": false,
+    "never_learn": true,
+    "construction_blueprint": "fbmh_core_shack_nw_rammed_earth_center",
+    "blueprint_name": "central building NW corner",
+    "blueprint_requires": [ { "id": "fbmh_tent_west" } ],
+    "blueprint_provides": [ { "id": "fbmh_center", "amount": 2 }, { "id": "fbmh_nw_center" } ],
+    "blueprint_excludes": [ { "id": "fbmh_nw_center" } ],
+    "blueprint_needs": {
+      "time": "2 d 12 h 30 m",
+      "skills": [ [ "fabrication", 4 ] ],
+      "inline": {
+        "tools": [ [ [ "frame_wood_light", -1 ] ], [ [ "log", -1 ] ] ],
+        "qualities": [ [ { "id": "CUT" } ], [ { "id": "DIG", "level": 2 } ], [ { "id": "HAMMER", "level": 2 } ] ],
+        "components": [
+          [ [ "2x4", 20 ] ],
+          [ [ "nail", 12 ] ],
+          [ [ "pointy_stick", 3 ], [ "spear_wood", 3 ] ],
+          [ [ "material_soil", 400 ] ],
+          [ [ "water", 150 ], [ "water_clean", 150 ] ],
+          [ [ "material_sand", 30 ], [ "material_quicklime", 30 ], [ "concrete", 2 ] ],
+          [ [ "rope_makeshift_6", 1 ], [ "rope_6", 1 ] ],
+          [ [ "log", 5 ] ],
+          [ [ "birchbark", 30 ], [ "pine_bough", 30 ] ]
+        ]
+      }
+    }
+  },
+  {
+    "type": "recipe",
+    "result": "faction_base_modular_hub_core_nw_rammed_earth_center",
+    "description": "A central building can act as a core and dining hall.  We should build out from the west room with rammed earth.",
+    "category": "CC_BUILDING",
+    "subcategory": "CSC_BUILDING_BASES",
+    "autolearn": false,
+    "never_learn": true,
+    "construction_blueprint": "fbmh_core_nw_rammed_earth_center",
+    "blueprint_name": "central building NW corner",
+    "blueprint_requires": [ { "id": "fbmh_west", "amount": 4 } ],
+    "blueprint_provides": [ { "id": "fbmh_center", "amount": 2 }, { "id": "fbmh_nw_center" } ],
+    "blueprint_excludes": [ { "id": "fbmh_nw_center" }, { "id": "fbmh_tent_west" } ],
+    "blueprint_needs": {
+      "time": "1 d 20 h",
+      "skills": [ [ "fabrication", 4 ] ],
+      "inline": {
+        "tools": [ [ [ "frame_wood_light", -1 ] ], [ [ "log", -1 ] ] ],
+        "qualities": [ [ { "id": "CUT" } ], [ { "id": "DIG", "level": 2 } ], [ { "id": "HAMMER", "level": 2 } ] ],
+        "components": [
+          [ [ "2x4", 20 ] ],
+          [ [ "nail", 8 ] ],
+          [ [ "pointy_stick", 1 ], [ "spear_wood", 1 ] ],
+          [ [ "material_soil", 380 ] ],
+          [ [ "water", 50 ], [ "water_clean", 50 ] ],
+          [ [ "material_sand", 10 ], [ "material_quicklime", 10 ], [ "concrete", 2 ] ],
+          [ [ "rope_makeshift_6", 1 ], [ "rope_6", 1 ] ],
+          [ [ "log", 12 ] ],
+          [ [ "birchbark", 40 ], [ "pine_bough", 40 ] ]
+        ]
+      }
+    }
+  },
+  {
+    "type": "recipe",
+    "result": "faction_base_modular_hub_core_rammed_earth_center",
+    "description": "A central building can act as a core and dining hall.  We should build between the east and west rooms with rammed earth.",
+    "category": "CC_BUILDING",
+    "subcategory": "CSC_BUILDING_BASES",
+    "autolearn": false,
+    "never_learn": true,
+    "construction_blueprint": "fbmh_core_rammed_earth_center",
+    "blueprint_name": "central building north half",
+    "blueprint_requires": [ { "id": "fbmh_east", "amount": 4 }, { "id": "fbmh_west", "amount": 4 } ],
+    "blueprint_provides": [ { "id": "fbmh_center", "amount": 4 }, { "id": "fbmh_ne_center" }, { "id": "fbmh_nw_center" } ],
+    "blueprint_excludes": [ { "id": "fbmh_ne_center" }, { "id": "fbmh_nw_center" }, { "id": "fbmh_tent_east" }, { "id": "fbmh_tent_west" } ],
+    "blueprint_needs": {
+      "time": "3 d 20 h 45 m",
+      "skills": [ [ "fabrication", 4 ] ],
+      "inline": {
+        "tools": [ [ [ "frame_wood_light", -1 ] ], [ [ "log", -1 ] ] ],
+        "qualities": [ [ { "id": "CUT" } ], [ { "id": "DIG", "level": 2 } ], [ { "id": "HAMMER", "level": 2 } ] ],
+        "components": [
+          [ [ "2x4", 40 ] ],
+          [ [ "nail", 8 ] ],
+          [ [ "pointy_stick", 3 ], [ "spear_wood", 3 ] ],
+          [ [ "material_soil", 400 ] ],
+          [ [ "water", 80 ], [ "water_clean", 80 ] ],
+          [ [ "material_sand", 25 ], [ "material_quicklime", 25 ], [ "concrete", 5 ] ],
+          [ [ "rope_makeshift_6", 1 ], [ "rope_6", 1 ] ],
+          [ [ "log", 15 ] ],
+          [ [ "birchbark", 60 ], [ "pine_bough", 60 ] ]
+        ]
+      }
+    }
+  },
+  {
+    "type": "recipe",
+    "result": "faction_base_modular_hub_core_shack_se_rammed_earth_south",
+    "description": "A central building can act as a core and dining hall.  We should build the southeast quarter of one from rammed earth.",
+    "category": "CC_BUILDING",
+    "subcategory": "CSC_BUILDING_BASES",
+    "autolearn": false,
+    "never_learn": true,
+    "construction_blueprint": "fbmh_core_shack_se_rammed_earth_south",
+    "blueprint_name": "central building SE corner",
+    "blueprint_requires": [ { "id": "fbmh_tent_southeast" } ],
+    "blueprint_provides": [ { "id": "fbmh_south", "amount": 2 }, { "id": "fbmh_se_south" } ],
+    "blueprint_excludes": [ { "id": "fbmh_se_south" } ],
+    "blueprint_needs": {
+      "time": "2 d 12 h 30 m",
+      "skills": [ [ "fabrication", 4 ] ],
+      "inline": {
+        "tools": [ [ [ "frame_wood_light", -1 ] ], [ [ "log", -1 ] ] ],
+        "qualities": [ [ { "id": "CUT" } ], [ { "id": "DIG", "level": 2 } ], [ { "id": "HAMMER", "level": 2 } ] ],
+        "components": [
+          [ [ "2x4", 20 ] ],
+          [ [ "nail", 12 ] ],
+          [ [ "pointy_stick", 3 ], [ "spear_wood", 3 ] ],
+          [ [ "material_soil", 400 ] ],
+          [ [ "water", 140 ], [ "water_clean", 140 ] ],
+          [ [ "material_sand", 30 ], [ "material_quicklime", 30 ], [ "concrete", 2 ] ],
+          [ [ "rope_makeshift_6", 1 ], [ "rope_6", 1 ] ],
+          [ [ "log", 5 ] ],
+          [ [ "birchbark", 30 ], [ "pine_bough", 30 ] ]
+        ]
+      }
+    }
+  },
+  {
+    "type": "recipe",
+    "result": "faction_base_modular_hub_core_se_rammed_earth_south",
+    "description": "A central building can act as a core and dining hall.  We should build out from the southeast room with rammed earth.",
+    "category": "CC_BUILDING",
+    "subcategory": "CSC_BUILDING_BASES",
+    "skill_used": "fabrication",
+    "autolearn": false,
+    "never_learn": true,
+    "construction_blueprint": "fbmh_core_se_rammed_earth_south",
+    "blueprint_name": "central building SE corner",
+    "blueprint_requires": [ { "id": "fbmh_southeast", "amount": 4 } ],
+    "blueprint_provides": [ { "id": "fbmh_south", "amount": 2 }, { "id": "fbmh_se_south" } ],
+    "blueprint_excludes": [ { "id": "fbmh_se_south" }, { "id": "fbmh_tent_southeast" } ],
+    "blueprint_needs": {
+      "time": "1 d 20 h",
+      "skills": [ [ "fabrication", 4 ] ],
+      "inline": {
+        "tools": [ [ [ "frame_wood_light", -1 ] ], [ [ "log", -1 ] ] ],
+        "qualities": [ [ { "id": "CUT" } ], [ { "id": "DIG", "level": 2 } ], [ { "id": "HAMMER", "level": 2 } ] ],
+        "components": [
+          [ [ "2x4", 20 ] ],
+          [ [ "nail", 8 ] ],
+          [ [ "pointy_stick", 1 ], [ "spear_wood", 1 ] ],
+          [ [ "material_soil", 250 ] ],
+          [ [ "water", 50 ], [ "water_clean", 50 ] ],
+          [ [ "material_sand", 10 ], [ "material_quicklime", 10 ], [ "concrete", 2 ] ],
+          [ [ "rope_makeshift_6", 1 ], [ "rope_6", 1 ] ],
+          [ [ "log", 9 ] ],
+          [ [ "birchbark", 40 ], [ "pine_bough", 40 ] ]
+        ]
+      }
+    }
+  },
+  {
+    "type": "recipe",
+    "result": "faction_base_modular_hub_core_shack_sw_rammed_earth_south",
+    "description": "A central building can act as a core and dining hall.  We should build the southwest quarter of one from rammed earth.",
+    "category": "CC_BUILDING",
+    "subcategory": "CSC_BUILDING_BASES",
+    "autolearn": false,
+    "never_learn": true,
+    "construction_blueprint": "fbmh_core_shack_sw_rammed_earth_south",
+    "blueprint_name": "central building SW corner",
+    "blueprint_requires": [ { "id": "fbmh_tent_southwest" } ],
+    "blueprint_provides": [ { "id": "fbmh_south", "amount": 2 }, { "id": "fbmh_sw_south" } ],
+    "blueprint_excludes": [ { "id": "fbmh_sw_south" } ],
+    "blueprint_needs": {
+      "time": "2 d 17 h 15 m",
+      "skills": [ [ "fabrication", 4 ] ],
+      "inline": {
+        "tools": [ [ [ "frame_wood_light", -1 ] ], [ [ "log", -1 ] ] ],
+        "qualities": [ [ { "id": "CUT" } ], [ { "id": "DIG", "level": 2 } ], [ { "id": "HAMMER", "level": 2 } ] ],
+        "components": [
+          [ [ "2x4", 15 ] ],
+          [ [ "nail", 8 ] ],
+          [ [ "pointy_stick", 4 ], [ "spear_wood", 4 ] ],
+          [ [ "material_soil", 500 ] ],
+          [ [ "water", 175 ], [ "water_clean", 175 ] ],
+          [ [ "material_sand", 40 ], [ "material_quicklime", 40 ], [ "concrete", 7 ] ],
+          [ [ "rope_makeshift_6", 1 ], [ "rope_6", 1 ] ],
+          [ [ "log", 5 ] ],
+          [ [ "birchbark", 30 ], [ "pine_bough", 30 ] ]
+        ]
+      }
+    }
+  },
+  {
+    "type": "recipe",
+    "result": "faction_base_modular_hub_core_sw_rammed_earth_south",
+    "description": "A central building can act as a core and dining hall.  We should build out from the southwest room with rammed earth.",
+    "category": "CC_BUILDING",
+    "subcategory": "CSC_BUILDING_BASES",
+    "autolearn": false,
+    "never_learn": true,
+    "construction_blueprint": "fbmh_core_sw_rammed_earth_south",
+    "blueprint_name": "central building SW corner",
+    "blueprint_requires": [ { "id": "fbmh_southwest", "amount": 4 } ],
+    "blueprint_provides": [ { "id": "fbmh_south", "amount": 2 }, { "id": "fbmh_sw_south" } ],
+    "blueprint_excludes": [ { "id": "fbmh_sw_south" }, { "id": "fbmh_tent_southwest" } ],
+    "blueprint_needs": {
+      "time": "2 d 45 m",
+      "skills": [ [ "fabrication", 4 ] ],
+      "inline": {
+        "tools": [ [ [ "frame_wood_light", -1 ] ], [ [ "log", -1 ] ] ],
+        "qualities": [ [ { "id": "DIG", "level": 2 } ], [ { "id": "HAMMER", "level": 2 } ] ],
+        "components": [
+          [ [ "pointy_stick", 2 ], [ "spear_wood", 2 ] ],
+          [ [ "material_soil", 400 ] ],
+          [ [ "water", 75 ], [ "water_clean", 75 ] ],
+          [ [ "material_sand", 15 ], [ "material_quicklime", 15 ], [ "concrete", 3 ] ],
+          [ [ "log", 8 ] ],
+          [ [ "stick", 15 ], [ "2x4", 15 ] ],
+          [ [ "birchbark", 45 ], [ "pine_bough", 45 ] ]
+        ]
+      }
+    }
+  },
+  {
+    "type": "recipe",
+    "result": "faction_base_modular_hub_core_rammed_earth_south",
+    "description": "A central building can act as a core and dining hall.  We should build between the southeast and southwest rooms with rammed earth.",
+    "category": "CC_BUILDING",
+    "subcategory": "CSC_BUILDING_BASES",
+    "autolearn": false,
+    "never_learn": true,
+    "construction_blueprint": "fbmh_core_rammed_earth_south",
+    "blueprint_name": "central building south half",
+    "blueprint_requires": [ { "id": "fbmh_southeast", "amount": 4 }, { "id": "fbmh_southwest", "amount": 4 } ],
+    "blueprint_provides": [ { "id": "fbmh_south", "amount": 4 }, { "id": "fbmh_se_south" }, { "id": "fbmh_sw_south" } ],
+    "blueprint_excludes": [
+      { "id": "fbmh_se_south" },
+      { "id": "fbmh_sw_south" },
+      { "id": "fbmh_tent_southeast" },
+      { "id": "fbmh_tent_southwest" }
+    ],
+    "blueprint_needs": {
+      "time": "3 d 20 h 45 m",
+      "skills": [ [ "fabrication", 4 ] ],
+      "inline": {
+        "tools": [ [ [ "frame_wood_light", -1 ] ], [ [ "log", -1 ] ] ],
+        "qualities": [ [ { "id": "CUT" } ], [ { "id": "DIG", "level": 2 } ], [ { "id": "HAMMER", "level": 2 } ] ],
+        "components": [
+          [ [ "2x4", 35 ] ],
+          [ [ "nail", 8 ] ],
+          [ [ "pointy_stick", 2 ], [ "spear_wood", 2 ] ],
+          [ [ "material_soil", 600 ] ],
+          [ [ "water", 125 ], [ "water_clean", 125 ] ],
+          [ [ "material_sand", 25 ], [ "material_quicklime", 25 ], [ "concrete", 5 ] ],
+          [ [ "rope_makeshift_6", 1 ], [ "rope_6", 1 ] ],
+          [ [ "log", 15 ] ],
+          [ [ "birchbark", 75 ], [ "pine_bough", 75 ] ]
+        ]
+      }
+    }
+  }
+]
